@@ -1,26 +1,33 @@
+import { Link } from 'react-router-dom'
 import { ButtonContainer } from './styles'
 
 interface Props {
-  children: React.ReactNode
-  color?: string
   icon: string
+  ariaLabel?: string
+  children?: React.ReactNode
+  color?: string
   disabled?: boolean
+  onClick?: (value?: any) => void
 }
 
 const Button = ({
+  icon,
+  ariaLabel,
   children, 
   color, 
-  icon,
-  disabled
+  disabled,
+  onClick
 }: Props ) => {
   return (
-    <ButtonContainer 
-      backgroundColor={color}
-      disabled={disabled}
-    >
-      <img src={icon} alt='Lupa' />
-      {children}
-    </ButtonContainer>
+      <ButtonContainer
+        onClick={onClick}
+        backgroundColor={color}
+        disabled={disabled}
+        aria-label={ariaLabel}
+      >
+        <img src={icon} />
+        {children}
+      </ButtonContainer>
   )
 }
 

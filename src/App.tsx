@@ -1,10 +1,11 @@
 import { 
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom'
 import GlobalStyle from './globalStyles'
 import BuscadorCnj from './pages/BuscadorCnj'
+import Processo from './pages/Processo'
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
       <Switch>
         <Route exact path='/'>
           <BuscadorCnj />
+        </Route>
+        <Route exact path='/proc/:procNum' >
+          <Processo />
         </Route>
       </Switch>
     </Router>
