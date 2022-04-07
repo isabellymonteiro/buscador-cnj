@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { MouseEventHandler } from 'react'
 import { ButtonContainer } from './styles'
 
 interface Props {
@@ -7,7 +7,8 @@ interface Props {
   children?: React.ReactNode
   color?: string
   disabled?: boolean
-  onClick?: (value?: any) => void
+  onClick?: MouseEventHandler
+  alt?: string
 }
 
 const Button = ({
@@ -16,7 +17,8 @@ const Button = ({
   children, 
   color, 
   disabled,
-  onClick
+  onClick,
+  alt
 }: Props ) => {
   return (
       <ButtonContainer
@@ -25,7 +27,7 @@ const Button = ({
         disabled={disabled}
         aria-label={ariaLabel}
       >
-        <img src={icon} />
+        <img src={icon} alt={alt}/>
         {children}
       </ButtonContainer>
   )

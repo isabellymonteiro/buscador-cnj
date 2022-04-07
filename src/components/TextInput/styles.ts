@@ -7,7 +7,7 @@ export const InputContainer = styled.input`
   background: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 4px;
-  
+
   :focus {
     outline-color: #2980b9;
   }
