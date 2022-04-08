@@ -1,7 +1,7 @@
 # Instalação do projeto
 
 * Clone este repositório
-* Instale as dependências do projeto, em sua raiz, com o comando: `npm install`
+* Na pasta raiz do projeto, instale as dependências com o comando: `npm install`
 
 # Execução do projeto
 
