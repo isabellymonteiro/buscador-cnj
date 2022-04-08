@@ -1,5 +1,5 @@
 const baseUrl = 'https://op.digesto.com.br'
-const token = '5af8ba4c-43e3-4361-9e9c-f73458ab6a5b'
+const token = '2a13ae70-a928-4fc8-ad08-91132322a603'
 
 export const getProcInfo = async (procNum: string) => {
   try {
