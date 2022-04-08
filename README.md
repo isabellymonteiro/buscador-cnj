@@ -1,3 +1,7 @@
+# Descrição
+
+Teste técnico realizado para a vaga de Desenvolvedor Frontend Junior na Digesto.
+
 # Instalação do projeto
 
 * Clone este repositório
